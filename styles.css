@@ -6,11 +6,26 @@ body {
     color: #333;
 }
 
-header {
+header.hero {
     background-color: #4a90e2;
     color: white;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     text-align: center;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.25rem;
+    background: #fff;
+    color: #4a90e2;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tagline {
+    margin: 0.5rem 0 0.75rem 0;
 }
 
 h1 {
@@ -52,4 +67,61 @@ footer {
     text-align: center;
     padding: 1rem;
     background-color: #eee;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+}
+
+.about-content img {
+    width: 180px;
+    border-radius: 50%;
+}
+
+.bio p {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.quick-facts {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-facts li {
+    margin-bottom: 0.25rem;
+}
+
+.skills {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+.skill {
+    margin-bottom: 0.5rem;
+}
+
+.skill span {
+    display: inline-block;
+    width: 130px;
+}
+
+.bar {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+    height: 8px;
+    background: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.level {
+    height: 100%;
+    background: #4a90e2;
 }
