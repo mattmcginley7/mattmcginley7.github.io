@@ -10,7 +10,7 @@ body {
 }
 
 header.hero {
-    background: linear-gradient(135deg, #4a90e2, #76b1ff);
+    background: linear-gradient(135deg, #4f8dfd 0%, #7fb8ff 100%);
     color: white;
     padding: 3rem 1rem;
     text-align: center;
@@ -99,9 +99,9 @@ footer {
 }
 
 .about-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 2rem;
     align-items: center;
     max-width: 800px;
     margin: 0 auto 2rem auto;
@@ -109,14 +109,28 @@ footer {
 
 .about-content img {
     width: 220px;
-    /* Display original rectangular shape */
     border-radius: 0;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.about-content img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+@media (max-width: 600px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .about-content img {
+        margin: 0 auto;
+    }
+}
 .bio p {
     margin-top: 0;
     margin-bottom: 0.75rem;
 }
+
 
 .quick-facts {
     list-style: none;
@@ -124,7 +138,13 @@ footer {
 }
 
 .quick-facts li {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
     margin-bottom: 0.25rem;
+}
+.quick-facts span {
+    font-weight: 600;
 }
 
 .skills {
