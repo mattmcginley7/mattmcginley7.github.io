@@ -80,6 +80,14 @@ main {
     transition: transform 0.2s;
 }
 
+.project iframe {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
 .project:hover {
     transform: translateY(-4px);
 }
