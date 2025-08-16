@@ -7,13 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Matt McGinley</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
     <header class="hero">
         <h1>Full-Stack Developer building fast, user-centric sites</h1>
         <p class="tagline">A health and fitness enthusiast with a passion for making websites</p>
         <a class="cta secondary" href="#contact">Let's Talk</a>
     </header>
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <h2>About Me</h2>
             <div class="about-content">
                 <img src="images/MattProfilePicture.png" alt="Headshot of Matt McGinley smiling">
@@ -27,7 +38,7 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <h2>Services</h2>
             <table class="services-table">
                 <thead>
@@ -51,7 +62,7 @@
                 </tbody>
             </table>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2>Projects</h2>
             <div class="project-list">
                 <a class="project" href="https://nflmockdraftsim.onrender.com">
@@ -83,3 +94,4 @@
     </footer>
 </body>
 </html>
+
